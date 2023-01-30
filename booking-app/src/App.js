@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import AirbnbHome from './components/AirbnbHome';
-import airbnb_logo from './Airbnb logo.png';
+import airbnb_logo from './logo10.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
@@ -125,7 +125,7 @@ const validateForm = (event) => {
             <img src={airbnb_logo} alt="" />
           </div>
           <div className="c1">
-            <span>Become an member of Airbnb today</span>
+            <span>Become an member of Lift-Intl today</span>
           </div>
           <div className="form">
             <div className="status"></div>
