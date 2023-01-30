@@ -16,7 +16,7 @@ const validateForm = (event) => {
   const status = document.querySelector(".status");
 
   let validation = "Please fill-in the above fields";
-  let emailVal = "Email validation error must include @ .com TryAgain!";
+  let emailVal = "Email validation error- must include @ sign TryAgain!";
   let passVal = "Password should not be less than 8 characters";
   if(!input1.value) {
     console.warn("validation error");
@@ -72,7 +72,7 @@ const validateForm = (event) => {
     const input1 = document.querySelector("#input1");
     const status = document.querySelector(".status");
     let validation = "Please fill-in the above fields";
-    let emailVal = "Email validation error must inclued @ .com TryAgain!";
+    let emailVal = "Email validation error- must include @ sign TryAgain!";
   if(!input1.value) {
     console.warn("validation error");
     status.classList.add("active");
@@ -97,7 +97,7 @@ const validateForm = (event) => {
     const status = document.querySelector(".status");
   
     let validation = "Please fill-in the above fields";
-    let passVal = "Passowrd char must not be less than 8";
+    let passVal = "Password should not be less than 8 characters";
      if(!input2.value){
         console.warn("validation error");
         status.classList.add("active");
@@ -107,7 +107,7 @@ const validateForm = (event) => {
      }
      function passwordValidate() {
        if(input2.value.length < 8){
-         console.warn("Passowrd char must not be less than 8");
+         console.warn("Password should not be less than 8 characters");
          status.classList.add("active");
         status.innerHTML = `${passVal}`;
        }else{

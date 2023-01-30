@@ -44,7 +44,7 @@
 .wrapper .content .c1 span{
   font-size: 2.5em;
   font-weight: 800;
-  -webkit-text-stroke: 1.2px rgb(255, 255, 255);
+  -webkit-text-stroke: 1.2px rgb(158, 219, 238);
   text-shadow: 0 0 5px #a5cad21a, 
                 0 0 10px #a5cad227, 
                 0 0 15px #a5cad223,
@@ -86,20 +86,31 @@
   position: absolute;
   top: 20px;
   left: 15px;
-  color: var(--grey);
+  color: var(--color-kimberly);
 }
 .wrapper .content .form form .eInput{
   position: relative;
+  background-color: var(--color-kimberly);
+
+}
+#input1 {
+  color: var(--color-kimberly);
+}
+#input2 {
+  color: var(--color-kimberly);
 }
 .status{
+  font-size: 1em;
   padding: 20px;
-  color: #721c24;
-  background-color: #f8d7da;
-  border: 1px solid #f5c6cb;
+  background-color: #6f5f90;
+  color: #ffeff7bb;
+  border: 1px solid #3be2ff;
   margin: 10px 0 10px;
   border-radius: 5px;
   display: none;
+  font-weight: 700;
   text-align: center;
+  -webkit-text-stroke: 0.7px #3a7681;
 }
 .status.active{
   display: block;
