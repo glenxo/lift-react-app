@@ -125,7 +125,7 @@ const validateForm = (event) => {
             <img src={airbnb_logo} alt="" />
           </div>
           <div className="c1">
-            <span>Become an member of Lift-Intl today</span>
+            <span>Lift-Intl Booking</span>
           </div>
           <div className="form">
             <div className="status"></div>
