@@ -32,25 +32,25 @@ const database = getDatabase();
 const Book = () => {
     let Hotels = [
         {
-            name: "Hotel 1",
+            name: "Trip 1",
             price: "100",
-            image: "https://images.unsplash.com/photo-1455587734955-081b22074882?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            image: "http://127.0.0.1:5500/main/Untitled(7).png",
         },
 
         {
-            name: "Hotel 2",
+            name: "Trip 2",
             price: "200",
-            image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            image: "http://127.0.0.1:5500/assets/Rio%20Bonito%20Chep/Cascada%20Grande.jpg",
         },
         {
-            name: "Hotel 3",
+            name: "Trip 3",
             price: "300",
-            image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            image: "http://127.0.0.1:5500/main/Untitled(15).png",
         },
         {
-            name: "Hotel 4",
+            name: "Trip 4",
             price: "400",
-            image: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            image: "http://127.0.0.1:5500/media/pacificbeach.jpg",
         },
     ]
     // console.log(Hotels[0].price);
