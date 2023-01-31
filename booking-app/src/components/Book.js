@@ -206,6 +206,7 @@ const Book = () => {
                             <div className="price">{'$' + Hotels[3].price}</div>
                         </div>
                     </div>
+                    
                     <div className="request">
                         <button className="btn" onClick={request}>Request</button>
                     </div>

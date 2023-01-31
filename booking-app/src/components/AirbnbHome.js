@@ -86,6 +86,10 @@ const Home = () => {
             <div className="inputData">
               <input type="time" name="" id="leave-time" />
             </div>
+            <div className="txt">Let us know how you'd like to customize your experience!</div>
+            <div className="message-box">
+            <textarea className="message" placeholder="Message"></textarea>
+            </div>
             <div className="book">
                 <button type="submit">Book</button>
             </div>
