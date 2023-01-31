@@ -175,7 +175,7 @@ const Book = () => {
                     <div className="trgt">
                     <div className="card">
                         <img src="" id='targetImage' alt="" />
-                         <div className="hotel_name" id='targetName'></div>
+                        <div className="hotel_name" id='targetName'></div>
                         <div className="price" id='targetPrice'></div>
                         </div>
                     </div>
@@ -206,7 +206,8 @@ const Book = () => {
                             <div className="price">{'$' + Hotels[3].price}</div>
                         </div>
                     </div>
-                    
+                    <div className="txt">Date you would like to Take the Trip</div>
+
                     <div className="request">
                         <button className="btn" onClick={request}>Request</button>
                     </div>
