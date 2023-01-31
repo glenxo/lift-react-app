@@ -44,7 +44,8 @@ const Home = () => {
         const phone_number = document.getElementById('phone-number');
         const amount = document.getElementById('amount');
 
-        if(!book_date.value || !book_time.value || !phone_number.value || !phone_number.value){
+
+        if(!book_date.value || !book_time.value || !phone_number.value || !amount.value){
             alert('Please fill all the fields');
         }else{
             writeUserData();
@@ -54,7 +55,7 @@ const Home = () => {
             bookingdate: book_date.value,
             bookingtime: book_time.value,
             phone_number: phone_number.value,
-            amount: amount.value,
+            amount: amount.value,            
             });
         }
             alert('Your booking has been made');
@@ -85,14 +86,20 @@ const Home = () => {
             <div className="inputData">
             <input type="tel" name="" id="phone-number" />
             <div className="txt">How Many</div>
+
             <div className="inputData">
             <input type="number" name="" id="amount" />
             </div>
             </div>
+
             <div className="txt">Let us know how you'd like to customize your experience!</div>
-            <div className="message-box">
+
+            <div className="inputData" >
+            <div className="message-box" >
             <textarea className="message" placeholder="Message"></textarea>
             </div>
+            </div>
+
             <div className="txt">You will receive email confirmation once booked</div>
             <div className="book">
                 <button type="submit">Book</button>
