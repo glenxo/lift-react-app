@@ -41,10 +41,10 @@ const Home = () => {
         const book_date = document.getElementById('book-date');
         const book_time = document.getElementById('book-time');
         
-        const leave_date = document.getElementById('leave-date');
-        const leave_time = document.getElementById('leave-time');
+        const phone_number = document.getElementById('phone-number');
+        const amount = document.getElementById('amount');
 
-        if(!book_date.value || !book_time.value || !leave_date.value || !leave_time.value){
+        if(!book_date.value || !book_time.value || !phone_number.value || !phone_number.value){
             alert('Please fill all the fields');
         }else{
             writeUserData();
@@ -53,8 +53,8 @@ const Home = () => {
             set(ref(db, 'data/'), {
             bookingdate: book_date.value,
             bookingtime: book_time.value,
-            leave_date: leave_date.value,
-            leave_time: leave_time.value,
+            phone_number: phone_number.value,
+            amount: amount.value,
             });
         }
             alert('Your booking has been made');
@@ -71,25 +71,29 @@ const Home = () => {
       <div className="content">
         <div className="text">Book Now</div>
         <div className="form2">
-          <div className="txt">Date & Time you would like to Stay</div>
+          <div className="txt">Date you would like to Take the Trip</div>
           <form action="" onSubmit={handleSubmit}>
             <div className="inputData">
               <input type="date" name="" id="book-date"/>
             </div>
+            <div className="txt">Whats your best time</div>
+
             <div className="inputData">
               <input type="time" name="" id="book-time" />
             </div>
-            <div className="txt">Date & Time you would like to leave</div>
+            <div className="txt">Phone Contact</div>
             <div className="inputData">
-              <input type="date" name="" id="leave-date" />
+            <input type="tel" name="" id="phone-number" />
+            <div className="txt">How Many</div>
+            <div className="inputData">
+            <input type="number" name="" id="amount" />
             </div>
-            <div className="inputData">
-              <input type="time" name="" id="leave-time" />
             </div>
             <div className="txt">Let us know how you'd like to customize your experience!</div>
             <div className="message-box">
             <textarea className="message" placeholder="Message"></textarea>
             </div>
+            <div className="txt">You will receive email confirmation once booked</div>
             <div className="book">
                 <button type="submit">Book</button>
             </div>
