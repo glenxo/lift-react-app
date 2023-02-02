@@ -31,7 +31,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const database = getDatabase();
+const database = getDatabase(app);
 
 const Home = () => {
     const [valid, setvalid] = useState(true)
