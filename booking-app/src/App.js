@@ -5,6 +5,11 @@ import airbnb_logo from './logo10.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+
+
+
 
 function App() {  
 const [hide, sethide] = useState(true);
@@ -14,6 +19,21 @@ const validateForm = (event) => {
   const input1 = document.querySelector("#input1");
   const input2 = document.querySelector("#input2");
   const status = document.querySelector(".status");
+    const firebaseConfig = {
+    apiKey: "AIzaSyCNa-ggZ2_rErdJoEQGciZMBrgLCvyQnuI",
+    authDomain: "lift-intl-fb2cd.firebaseapp.com",
+    databaseURL: "https://lift-intl-fb2cd-default-rtdb.firebaseio.com/",
+    projectId: "lift-intl-fb2cd",
+    storageBucket: "lift-intl-fb2cd.appspot.com",
+    messagingSenderId: "996609355856",
+    appId: "1:996609355856:web:ad55641b74bff24e69e155",
+    measurementId: "G-Q2H3QS0SBY"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+
 
   let validation = "Please fill-in the above fields";
   let emailVal = "Email validation error- must include @ sign TryAgain!";
